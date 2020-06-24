@@ -181,3 +181,226 @@
 // document.write("There are " + count + " occurrence(s) of word 'The'");
 
 
+// Chapter 26-30 Task #1
+
+// var num = prompt("Enter a (+ve) number");
+// var numberNum = Number(num);
+// document.write("number: "+numberNum+"<br>");
+// var roundOffNum = Math.round(num);
+// document.write("round off value: "+roundOffNum+"<br>");
+// var floorNum = Math.floor(num);
+// document.write("floor value: "+floorNum+"<br>");
+// var ceilNum = Math.ceil(num);
+// document.write("ceil value: "+ceilNum+"<br>");
+
+
+// Chapter 26-30 Task #2
+
+// var num = prompt("Enter a (-ve) floating number");
+// var numberNum = Number(num);
+// document.write("number: "+numberNum+"<br>");
+// var roundOffNum = Math.round(num);
+// document.write("round off value: "+roundOffNum+"<br>");
+// var floorNum = Math.floor(num);
+// document.write("floor value: "+floorNum+"<br>");
+// var ceilNum = Math.ceil(num);
+// document.write("ceil value: "+ceilNum+"<br>");
+
+
+// Chapter 26-30 Task #3
+
+// var num1 = prompt("Enter a number");
+// num1 = parseInt(num1);
+// var absNum = Math.abs(num1);
+// document.write("The absolute value of "+num1+" is "+absNum);
+
+
+// Chapter 26-30 Task #4
+
+// var tempDice = Math.random();
+// var dice = (tempDice*6) + 1;
+// dice = Math.floor(dice);
+// document.write("Random Dice Value: "+dice+"<br>");
+
+
+// Chapter 26-30 Task #5
+
+// var randomNum = Math.random();
+// var tempCoin = (randomNum*2) + 1;
+// var coin = Math.floor(tempCoin);
+// if (coin == 1){
+//     document.write(coin + "<br> random coin value: Tails");
+// } else document.write(coin + "<br> random coin value: Heads");
+
+
+// Chapter 26-30 Task #6
+
+// var randomNum = Math.random();
+// var randomNum1 = (randomNum*100)+1;
+// var finalNum = Math.floor(randomNum1);
+// document.write("Random number between 1 and 100: "+finalNum);
+
+
+// Chapter 26-30 Task #7
+
+
+// var originalWeight = prompt("Enter your weight");
+// weight = parseFloat(originalWeight);
+// document.write("The weight of user is "+weight+" kilograms");
+
+
+// Chapter 26-30 Task #8
+
+// var randomNum = Math.random();
+// var randomNum1 = (randomNum*10)+1;
+// randomNum = Math.floor(randomNum1);
+// var userNum = +prompt("Enter a number between 1 to 10");
+// if (userNum == randomNum){
+//     alert("Congratulate! your guess is correct");
+// } else alert("Try again!");
+
+
+// Chapter 31-34 Task #1
+
+// var now = new Date();
+// document.write(now);
+
+
+// Chapter 31-34 Task #2
+
+// var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var now = new Date();
+// var monthNum = now.getMonth();
+// var currentMonth = monthNames[monthNum];
+// document.write("Current month: "+currentMonth);
+
+
+// Chapter 31-34 Task #3
+
+// var now = new Date();
+// var now = now.toString();
+// var dayName = now.slice(0,3);
+// document.write("Today is "+dayName);
+
+
+// Chapter 31-34 Task #4
+
+// var now = new Date();
+// var day = now.getDay();
+// if(day == 0 || day == 6){
+//     document.write("It's Fun day");
+// };
+
+
+// Chapter 31-34 Task #5
+
+// var now = new Date();
+// var date = now.getDate();
+// if(date >= 1 && date <= 15){
+//     document.write("First fifteen days of the month");
+// } else if (date >= 16 && date <= 31){
+//     document.write("Last fifteen days of the month");
+// };
+
+
+// Chapter 31-34 Task #6
+
+// var now = new Date();
+// document.write("Current Date: "+now+"<br>");
+// var MSeconds = now.getTime();
+// document.write("Elapsed milliseconds since January 1, 1970: "+MSeconds+"<br>");
+// var minutes = MSeconds / (1000 * 60);
+// document.write("Elapsed minutes since January 1, 1970: "+minutes+"<br>");
+
+
+// Chapter 31-34 Task #7
+
+// var now = new Date();
+// var time = now.getHours();
+// if (time >= 0 && time < 12){
+//     document.write("Its AM");
+// } else if (time >= 12 && time <= 23){
+//     document.write("Its PM");
+// };
+
+
+// Chapter 31-34 Task #8
+
+// var laterDate = new Date("December 31, 2020");
+// document.write("Later Date: "+laterDate);
+
+
+// Chapter 31-34 Task #9
+
+// var ramadan1st = new Date("June 18, 2015");
+// var passedDays = ramadan1st / (1000 * 60 * 60 * 24);
+// passedDays = Math.floor(passedDays);
+// document.write(passedDays+" days have passed since 1st Ramadan, 2015");
+
+
+// Chapter 31-34 Task #10
+
+// var now = new Date();
+// document.write("On  reference date "+now+"<br>");
+// var date2020 = new Date("January 1, 2020");
+// var diff = now.getTime() - date2020.getTime();
+// var seconds = Math.floor(diff / 1000);
+// document.write(seconds+" seconds had passed since beginning of 2020");
+
+
+// Chapter 31-34 Task #11
+
+// var now = new Date();
+// document.write("Current date: "+now+"<br>");
+// now.setHours( now.getHours() - 1 );
+// document.write("1 hour ago, it was "+now+"<br>");
+
+
+
+// Chapter 31-34 Task #12
+
+// var now = new Date();
+// document.write("Current date: "+now+"<br>");
+// var year = now.getFullYear();
+// var month = now.getMonth();
+// var day = now.getDate();
+// var backDate = new Date(year - 100, month, day);
+// document.write("100 years back, it was "+backDate+"<br>");
+
+
+// Chapter 31-34 Task #13
+
+// var age = +prompt("Enter your age");
+// document.write("Your age is "+age+"<br>");
+// var now = new Date();
+// var year = now.getFullYear();
+// var month = now.getMonth();
+// var day = now.getDate();
+// var birthDate = new Date(year - age, month, day);
+// var birthYear = birthDate.getFullYear();
+// document.write("Your birth year is "+birthYear);
+
+
+// Chapter 31-34 Task #14
+
+// document.write("<h1> K-Electric Bill </h1>");
+// var customerName = prompt("Enter Cutsomer Name");
+// var now = new Date();
+// var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var monthNum = now.getMonth();
+// var numberOfUnits = +prompt("Enter number of units");
+// var chargesPerUnit = 16;
+// document.write("Customer Name: "+customerName+"<br>");
+// document.write("Month: "+monthNames[monthNum]+"<br>");
+// document.write("Number of units: "+numberOfUnits+"<br>");
+// document.write("Charge per unit: "+chargesPerUnit+"<br><br>");
+// var netAmount = numberOfUnits * chargesPerUnit;
+// var latePaymentCharge = 350;
+// var latePayAmount = netAmount + latePaymentCharge;
+// document.write("Net Amount Payable (within Due Date): "+netAmount+"<br>");
+// document.write("Late payment surcharge: "+latePaymentCharge+"<br>");
+// document.write("Gross Amount Payable (after Due Date): "+latePayAmount+"<br>");
+
+
+// Chapter 35-38 Task #1
+
