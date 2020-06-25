@@ -404,3 +404,230 @@
 
 // Chapter 35-38 Task #1
 
+// function dateObj()
+// {
+//     var now = new Date();
+//     return now;
+// };
+// var nowDate = dateObj();
+// document.write(nowDate);
+
+
+// Chapter 35-38 Task #2
+
+// function greet(fn, ln)
+// {
+//     alert("Good Evening! "+fn+" "+ln);
+// };
+// var firstName = prompt("Enter first name");
+// var lastName = prompt("Enter last name");
+// greet(firstName,lastName);
+
+
+// Chapter 35-38 Task #3
+
+// function add(num1, num2)
+// {
+//     var sum = num1 + num2;
+//     return sum;
+// }
+// var num1 = +prompt("Enter first number");
+// var num2 = +prompt("Enter second number");
+// alert(add(num1,num2));
+
+
+// Chapter 35-38 Task #4
+
+// function calc(num1, num2, ope)
+// {
+//     var result;
+//     if(ope === "+"){
+//         result = num1+num2;
+//     } else if(ope === "-"){
+//         result = num1-num2;
+//     } else if(ope === "*"){
+//         result = num1*num2;
+//     } else if(ope === "/"){
+//         result = num1/num2;
+//     };
+//     return result;
+// }
+// var num1 = +prompt("Enter first number");
+// var num2 = +prompt("Enter second number");
+// var operator = prompt("Enter operator")
+// alert(calc(num1, num2, operator));
+
+
+// Chapter 35-38 Task #5
+
+// function square(num)
+// {
+//     var result = num*num;
+//     return result;
+// };
+// var tempNum = +prompt("Enter a number to find it's square");
+// alert(square(tempNum));
+
+
+// Chapter 35-38 Task #6
+
+// function Factorial(n)
+//{
+//     var ans=1;
+//     for (var i = 2; i <= n; i++)
+//         ans = ans * i;
+//     return ans;
+// };
+// var tempNum = +prompt("Enter a number to find factorial")
+// alert(Factorial(tempNum));
+
+
+// Chapter 35-38 Task #7
+
+// function Count(startV, endV)
+// {
+//     var result=startV;
+//     for(var i=startV;i<=endV;i++){
+//         document.write(result + "<br>");
+//         result++;
+//     };
+// };
+// var num1 = +prompt("Enter start number");
+// var num2 = +prompt("Enter end number");
+// Count(num1, num2);
+
+
+// Chapter 35-38 Task #8
+
+// var base = prompt("Enter base value of Triangle");
+// var perpendicular = prompt("Enter perpendicular value of Triangle");
+
+// function calculateHypotenuse(base, perpendicular)
+// {
+//     function calculateSquare(temp)
+//     {
+//         result = temp * temp;
+//         return result;
+//     };
+//     var baseSquare = calculateSquare(base);
+//     var perpendicularSquare = calculateSquare(perpendicular);
+//     var hypotenuseSquare = baseSquare + perpendicularSquare;
+//     var hypotenuse = Math.sqrt(hypotenuseSquare);
+//     hypotenuse = hypotenuse.toFixed(2)
+//     return hypotenuse;
+// };
+
+// alert("Hypotenuse of right angle Triangle: "+calculateHypotenuse(base, perpendicular));
+
+
+// Chapter 35-38 Task #9
+
+// function AreaOfR(width, height)
+// {
+//     A = width * height;
+//     return A;
+// };
+// var width = +prompt("Enter width of rectangle");
+// var height = +prompt("Enter height of rectangle");
+
+// alert("Area of Rectangle: "+AreaOfR(15,5));
+// alert("Area of Rectangle: "+AreaOfR(width,height));
+
+
+// Chapter 35-38 Task #10
+
+// function palindromeChecker(str) {
+
+//     var length = str.length;
+//     var halfL = Math.floor(length/2);
+//     for ( var i = 0; i < halfL; i++ ){
+//         if (str[i] !== str[length - 1 - i]) {
+//             alert("This is not a Palindrome word");
+//             break;
+//         };
+//         alert("This is a Palindrome word");
+//         break;
+//     };
+// };
+
+// var str = prompt("Enter a word to check if its Palindrome or Not");
+// palindromeChecker(str);
+
+
+// Chapter 35-38 Task #11
+
+// function captialize(str)
+// {
+//     var firstChar = str[0].toUpperCase();
+//     str = firstChar + str.slice(1);
+//     for(var i=0;i<str.length;i++){
+//         if(str.slice(i,i+1) === " "){
+//             var tempChar = str[i+1].toUpperCase();
+//             str = str.slice(0,i+1) + tempChar + str.slice(i+2);
+//         }
+//     }
+//     return str;
+// };
+// var text = "the quick brown fox";
+// document.write("EXAMPLE STRING: "+text+"<br>");
+// var captializeText = captialize(text);
+// document.write("EXPECTED OUTPUT: "+captializeText+"<br>");
+
+
+// Chapter 35-38 Task #12
+
+// function longestWord(str)
+// {
+//     var substring = str.split(" ");
+//     var minChar = '';
+//     for (var i = 0; i <= substring.length - 1; i++){
+//         if (substring[i].length >= minChar.length){
+//             minChar = substring[i];
+//         }
+//     }
+//     return minChar;
+// };
+
+// var text = "Web Development Tutorial";
+// document.write("EXAMPLE STRING: "+text+"<br>");
+// var countedStr = longestWord(text);
+// document.write("EXPECTED OUTPUT: "+countedStr+"<br>")
+
+
+// Chapter 35-38 Task #13
+
+// function lettersCounter(str,letter)
+// {
+//     var count = 0;
+//     for (var i=0;i<str.length;i++) 
+//     {
+//         if (str.charAt(i) == letter) 
+//         {
+//             count += 1;
+//         }
+//     }
+//     return count;    
+// }
+// var resultCount = lettersCounter("JSResourceS.com","o")
+// document.write("Input: JSResourceS.com, for finding 'o'. <br>");
+// document.write("Ouput: "+resultCount+"<br>");
+
+
+// Chapter 35-38 Task #14
+
+// function calcCircumference(radius)
+// {
+//     var result = 2 * 3.142 * radius;
+//     result = result.toFixed(2);
+//     document.write("The circumference is "+result+"<br>");
+// };
+// function calcArea(radius)
+// {
+//     var result = 3.142 * (radius*radius);
+//     result = result.toFixed(2);
+//     document.write("The area is "+result+"<br>");
+// };
+
+// var radius = +prompt("Enter radius of the circle");
+// calcCircumference(radius);
+// calcArea(radius);
